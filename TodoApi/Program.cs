@@ -30,11 +30,11 @@ builder.Services.AddDbContext<ToDoDbContext>();
 
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+// if (app.Environment.IsDevelopment())
+// {
+app.UseSwagger();
+app.UseSwaggerUI();
+// }
 
 app.UseCors("AllowAll");
 
@@ -46,7 +46,12 @@ app.MapGet("/", async (ToDoDbContext context) =>
     return Results.Ok(data);
 });
 
-//שליפת משימה משוימת לפי קוד משימה
+app.MapGet("/Hello", async () =>
+{
+    return Results.Ok("Hello world!");
+});
+
+//שליפת משימה מסוימת לפי קוד משימה
 app.MapGet("/ToDo/{id}", async (ToDoDbContext context, int id) =>
 {
     var item = await context.Items.FindAsync(id);
@@ -57,7 +62,7 @@ app.MapGet("/ToDo/{id}", async (ToDoDbContext context, int id) =>
     return Results.Ok(item);
 });
 
-//שליפת משימה משוימת לפי שם משימה
+//שליפת משימה מסוימת לפי שם משימה
 app.MapGet("/ToDoByName", async (ToDoDbContext context, string todo) =>
 {
     var item = await context.Items.FirstOrDefaultAsync(x => x.Name == todo);
