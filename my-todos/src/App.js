@@ -31,7 +31,7 @@ function App() {
   }
 
   useEffect(() => {
-    console.log(process.env.REACT_APP_URI);
+    console.log(process.env);
     getTodos();
   }, []);
 
