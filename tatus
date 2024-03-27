@@ -1,0 +1,41 @@
+[33mcommit ae963983f7c8e01c4feb934cfa7aa199cfb0c950[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: feigi <f0527121376@gmail.com>
+Date:   Wed Mar 20 01:11:46 2024 +0200
+
+    add log
+
+[33mcommit f7de8bd04438f228bb21e9f63314a956a1cc294e[m
+Author: feigi <f0527121376@gmail.com>
+Date:   Wed Mar 20 01:10:12 2024 +0200
+
+    Stop tracking .env file
+
+[33mcommit 058cb72954c249e256fb33703020d6e69655c15e[m
+Author: feigi <f0527121376@gmail.com>
+Date:   Wed Mar 20 01:07:13 2024 +0200
+
+    add .env to gitignore
+
+[33mcommit 54cd12b836122fa4056587317191cfc9898cb1c7[m
+Author: feigi <f0527121376@gmail.com>
+Date:   Wed Mar 20 01:05:47 2024 +0200
+
+    add .env file
+
+[33mcommit 0e11e91c23f857408e7749128d3d82606f26e3ef[m
+Author: feigi <f0527121376@gmail.com>
+Date:   Sun Mar 17 19:40:55 2024 +0200
+
+    add defult get
+
+[33mcommit 9302937d166b462099f119c62b210810ba79ddbe[m
+Author: feigi <f0527121376@gmail.com>
+Date:   Sun Mar 17 02:12:25 2024 +0200
+
+    add docker file
+
+[33mcommit 6d19f04e7769843de7436d7d611bea1f738b3ab6[m
+Author: feigi <f0527121376@gmail.com>
+Date:   Sun Mar 17 01:39:14 2024 +0200
+
+    17/02

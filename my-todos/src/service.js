@@ -33,6 +33,12 @@ export default {
     return result.data;
   },
 
+  // נסיון לבדיקה אם מתחבר לשרת
+  getTitle: async () => {
+    const result = await axios.get(`${process.env.REACT_APP_URI}/hello`);
+    return result.data;
+  },
+
   //הוספת משימה חדשה
   addTask: async (name) => {
     const result = await axios.post(process.env.REACT_APP_URI, null, {
@@ -45,11 +51,15 @@ export default {
 
   //עדכון סטטוס משימה
   setCompleted: async (id, isComplete) => {
-    const result = await axios.put(`${process.env.REACT_APP_URI}/ToDoComplete/${id}`, null, {
-      params: {
-        complete: isComplete,
-      },
-    });
+    const result = await axios.put(
+      `${process.env.REACT_APP_URI}/ToDoComplete/${id}`,
+      null,
+      {
+        params: {
+          complete: isComplete,
+        },
+      }
+    );
     console.log("setCompleted", { id, isComplete });
     return result.data;
   },

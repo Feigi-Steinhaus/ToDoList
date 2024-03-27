@@ -5,9 +5,16 @@ function App() {
   const [newTodo, setNewTodo] = useState("");
   const [todos, setTodos] = useState([]);
 
+  const [title, setTitle] = useState();
+
   async function getTodos() {
     const todos = await service.getTasks();
     setTodos(todos);
+  }
+
+  async function getTitle() {
+    const t = await service.getTitle();
+    setTitle(t);
   }
 
   async function createTodo(e) {
@@ -33,6 +40,7 @@ function App() {
   useEffect(() => {
     console.log(process.env);
     getTodos();
+    getTitle();
   }, []);
 
   return (
@@ -51,6 +59,7 @@ function App() {
       </header>
       <section className="main" style={{ display: "block" }}>
         <ul className="todo-list">
+          <h1>{title}</h1>
           {todos.map((todo) => {
             return (
               <li className={todo.isComplete ? "completed" : ""} key={todo.id}>

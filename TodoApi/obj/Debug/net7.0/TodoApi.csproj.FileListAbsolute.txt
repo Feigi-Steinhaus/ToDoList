@@ -51,3 +51,4 @@ D:\פרקטיקוד\minimalApi\TodoApi\bin\Debug\net7.0\package-lock.json
 D:\פרקטיקוד\minimalApi\TodoApi\bin\Debug\net7.0\package.json
 D:\פרקטיקוד\minimalApi\TodoApi\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
 D:\פרקטיקוד\minimalApi\TodoApi\obj\Debug\net7.0\TodoApi.csproj.Up2Date
+D:\פרקטיקוד\minimalApi\TodoApi\obj\Debug\net7.0\TodoApi.sourcelink.json
