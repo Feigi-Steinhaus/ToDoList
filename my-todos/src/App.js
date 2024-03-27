@@ -41,6 +41,7 @@ function App() {
     console.log(process.env);
     getTodos();
     getTitle();
+    console.log(title);
   }, []);
 
   return (
