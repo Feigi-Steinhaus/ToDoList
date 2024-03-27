@@ -33,12 +33,6 @@ export default {
     return result.data;
   },
 
-  // נסיון לבדיקה אם מתחבר לשרת
-  getTitle: async () => {
-    const result = await axios.get(`${process.env.REACT_APP_URI}/hello`);
-    return result.data;
-  },
-
   //הוספת משימה חדשה
   addTask: async (name) => {
     const result = await axios.post(process.env.REACT_APP_URI, null, {

@@ -5,16 +5,9 @@ function App() {
   const [newTodo, setNewTodo] = useState("");
   const [todos, setTodos] = useState([]);
 
-  const [title, setTitle] = useState();
-
   async function getTodos() {
     const todos = await service.getTasks();
     setTodos(todos);
-  }
-
-  async function getTitle() {
-    const t = await service.getTitle();
-    setTitle(t);
   }
 
   async function createTodo(e) {
@@ -40,8 +33,6 @@ function App() {
   useEffect(() => {
     console.log(process.env);
     getTodos();
-    getTitle();
-    console.log(title);
   }, []);
 
   return (
