@@ -51,7 +51,6 @@ function App() {
       </header>
       <section className="main" style={{ display: "block" }}>
         <ul className="todo-list">
-          <h1>{title}</h1>
           {todos.map((todo) => {
             return (
               <li className={todo.isComplete ? "completed" : ""} key={todo.id}>
